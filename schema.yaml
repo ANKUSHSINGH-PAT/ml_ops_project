@@ -1,0 +1,29 @@
+COLUMNS:
+  - name: fixed_acidity
+    type: float
+  - name: volatile_acidity
+    type: float
+  - name: citric_acid
+    type: float
+  - name: residual_sugar
+    type: float
+  - name: chlorides
+    type: float
+  - name: free_sulfur_dioxide
+    type: float
+  - name: total_sulfur_dioxide
+    type: float
+  - name: density
+    type: float
+  - name: pH
+    type: float
+  - name: sulphates
+    type: float
+  - name: alcohol
+    type: float
+  - name: quality
+    type: int
+
+TARGET_COLUMN:
+  name: quality
+  type: int
