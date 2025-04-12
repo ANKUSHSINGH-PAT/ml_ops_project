@@ -1,4 +1,8 @@
+import sys
 import os
+
+# Add the project root to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 import urllib.request as request
 from src.datascience import logger
 import zipfile

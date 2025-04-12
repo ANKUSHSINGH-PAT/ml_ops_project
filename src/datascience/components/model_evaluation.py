@@ -1,4 +1,9 @@
+
+import sys
 import os
+
+# Add the project root to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 import pandas as pd
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from urllib.parse import urlparse

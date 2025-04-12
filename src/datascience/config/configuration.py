@@ -1,3 +1,8 @@
+import sys
+import os
+
+# Add the project root to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 from src.datascience.constants import *
 from src.datascience.utils.common import read_yaml, create_directories
 

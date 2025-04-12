@@ -1,3 +1,8 @@
+import sys
+import os
+
+# Add the project root to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 from src.datascience.config.configuration import ConfigurationManager
 from src.datascience.components.data_ingestion import DataIngestion
 from src.datascience import logger

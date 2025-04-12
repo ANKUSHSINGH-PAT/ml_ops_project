@@ -1,5 +1,9 @@
-import pandas as pd
+import sys
 import os
+
+# Add the project root to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
+import pandas as pd
 from src.datascience import logger
 from sklearn.linear_model import ElasticNet
 import joblib

@@ -1,4 +1,8 @@
+import sys
 import os
+
+# Add the project root to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 from src.datascience import logger
 from sklearn.model_selection import train_test_split
 from src.datascience.entity.config_entity import DataTransformationConfig
