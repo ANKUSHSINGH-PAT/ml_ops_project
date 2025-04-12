@@ -14,3 +14,4 @@ Flask
 Flask-Cors
 pyyaml
 pytest
+pyyaml>=6.0
