@@ -19,17 +19,18 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: 3.8  # Match your local version
 
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pyyaml  # <-- FORCE install
-          pip install -r requirements.txt
-          pip install .  # if you're using a local package (e.g., with setup.py)
+          pip install -r requirements.txt  # Install from requirements.txt
+          
+          # Debug installed packages
+          pip freeze
 
-      # Step 4: Confirm YAML is available
+      # Step 4: Confirm PyYAML is installed
       - name: Verify PyYAML installation
         run: |
           python -c "import yaml; print('✅ PyYAML is installed.')"
